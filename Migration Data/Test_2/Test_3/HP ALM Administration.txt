@@ -1,16 +1,16 @@
 HP ALM Administration: Create Domain, Project & User
 In order to work with ALM, you need to
 
-Create Domain
-Create Project
-Create Users
+******Create Domain
+******Create Project
+******Create Users
 In practice, these would be created by ALM Site Administrator as an end user WILL NOT have access to Site Admin page.
 
  
 
  
 
-How to Create a Domain
+******How to Create a Domain******
 Step 1) Launch ALM and click 'Site administration' from the home page. User will be popped up to enter the credentials. Enter the Credentials that we have created during Installation.
 
 Create a Domain, Project, User in HP ALM
