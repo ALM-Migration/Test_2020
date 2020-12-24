@@ -1,0 +1,286 @@
+Requirements Module in HP ALM (Quality Center) Tutorial
+Defining the Requirements is one of the preliminary phases for software development lifecycle.
+Defining Requirements refers to what has to be delivered to the clients at the end of that specific release.
+Establishing requirements with brevity and clarity upfront would result in minimal rework after development is completed.
+This module in ALM enables users to define, manage and track requirements.
+All About Requirements Specifications module in HP ALM
+
+We will make use of the sample application (GURU99 Banking) to understand it better.
+
+In this tutorial we will learn
+
+How to Create Requirement
+How to Upload Requirement using Microsoft Excel
+How to perform Coverage Analysis (Requirement Traceability)
+All About Requirements Specifications module in HP ALM
+
+How to create Requirements
+Step 1) Click on 'Requirements' in 'Requirements' module.
+
+All About Requirements Specifications module in HP ALM
+
+Step 2) Let us maintain all the requirements for this release(2017 R1) in a specific folder so that it would be easy for us to access. In addition to that we would like to show the distinction between 'Functional' and 'Non Functional' requirements by placing them in different folders.
+
+Click 'New Folder' Icon under Requirements Module
+Enter the Name of the Folder as "2017 R1" to easily identify the requirements for this release.
+All About Requirements Specifications module in HP ALM
+
+Step 3) The created folder would be shown as displayed below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 4) Now let us create a folder for 'Functional' Requirements where are all the Functional requirements documents/work items are maintained.
+
+All About Requirements Specifications module in HP ALM
+
+Step 5) The Created Folder will be displayed in 'Requirements' module as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 6) Similarly create 'Non Functional' Folder. Upon creating both Functional and Non Functional folder, we will have the folder structure as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 7) Click 'New Requirements' icon in the requirements page as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+The 'New Requirements' dialog opens up and user has to enter the following mandatory fields.
+
+Enter the Name of the Requirement
+Select the Requirement Type
+All About Requirements Specifications module in HP ALM
+
+Step 8) User can also enter the following Non-Mandatory fields.
+
+Author
+Priority
+Reviewed
+Target Release
+Target Cycle
+Description and Comments.
+Step 9) Requirements also allows users to enter the requirements in 'Rich Text' format directly as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 10) Usually, requirements are captured in a word document. They be uploaded under attachments tab as shown below. ALM also support all other file types like .xls, .jpg etc. After uploading click Submit button.
+
+All About Requirements Specifications module in HP ALM
+
+Step 11) The requirement would be displayed to the user as shown below:
+
+All About Requirements Specifications module in HP ALM
+
+How to Upload Requirements using Microsoft Excel
+Sometimes, user won't be creating requirements manually. It is easy to upload all requirements in bulk rather than creating each one by one, which is a time consuming process. In order to facilitate uploading into ALM, HP has come up with an Addin with which the user can upload from MS excel/MS Word directly. Let us understand the step by step procedure to upload requirements into QC from Excel.
+
+For uploading Requirements, we need to understand the workflow:
+
+All About Requirements Specifications module in HP ALM
+
+Part A - Downloading:
+Step 1) Navigate to ALM home page http://localhost:8181/qcbin and click on "Tools" from the list of links.
+
+All About Requirements Specifications module in HP ALM
+
+Step 2: Click on "More HP ALM Add-ins" Link from the add-ins page as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) Select 'Add-ins for Microsoft Applications' and select 'Microsoft Excel' from the link as we would be using MS Excel add-in to upload the Data into HP-ALM.
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) Select HP-ALM Microsoft Excel Add-in for ALM 12.00 link.
+
+All About Requirements Specifications module in HP ALM
+
+Step 4) Select HP-ALM Microsoft Excel Add-in for ALM 12.00 link. Users can also refer to the 'Read-me' Guide and 'Add-in' Guide. Upon clicking on the link, the add-in set up file will be downloaded to default location/user selected location.
+
+All About Requirements Specifications module in HP ALM
+
+Part B – Installation:
+Step 1) Select the downloaded add-in and perform a right click on the downloaded file. Select 'Run as Administrator'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 2) Select the downloaded add-in and perform a right click on the downloaded file. Select 'Run as Administrator' so that we can install the add-in.
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) Select the installation type. Here we have selected 'For All Users' which was the default setting. If you wish to install only for the current user please select 'For Current User Only' and click 'Next'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 4) Upon completion of the installation, user would get the status message. Click 'Finish' Button.
+
+All About Requirements Specifications module in HP ALM
+
+Step 5) To verify if the add-in got successfully installed, open Excel and navigate to 'Add-ins' Tab. You will find an option 'Export to HP ALM' which means the 'add-in' got installed successfully.
+
+All About Requirements Specifications module in HP ALM
+
+Part C – Uploading Requirements into ALM :
+Step 1) Before uploading the requirements from excel, we need to prepare the Excel such that it can be uploaded.
+
+Select the Fields that you wish to upload into ALM and create a header in Excel for those fields.
+Enter a valid data in each one of those fields as shown below.
+All About Requirements Specifications module in HP ALM
+
+Step 2) After selecting the data to upload, click 'Export to HP ALM' from 'Add-Ins' .
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) The ALM Export Wizard opens. Enter the HP ALM Server URL and Click 'Next'.
+
+All About Requirements Specifications module in HP ALM
+
+ Enter the user name and password for authentication and Click 'Next'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) Select the Domain, Project Name into which we would like to upload the requirements and Click 'Next'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 4) Select the type of data that we would like to upload. In this case, it is requirements. We can also upload Tests/Defects which we will deal with it later.
+
+All About Requirements Specifications module in HP ALM
+
+Step 5) Enter the New Map name. The first option, 'Select a map' is disabled because we haven't created a map so far. Hence we should create new map name and click 'Next'. We haven't selected 'Create a Temporary map' as we would like to reuse every time for uploading 'Requirements'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 5b) In this dialog, user has to choose the requirement type behavior. If we are uploading only one type of requirement, then we should select 'Single Requirement Type'.
+
+We are uploading different requirement types. Hence we have to map against the corresponding column in excel. As per our template, Column 'E' carries the requirement type.
+
+All About Requirements Specifications module in HP ALM
+
+Step 6) Upon Clicking 'Next', the mapping dialog opens as shown below.
+
+The left pane grid items that are listed correspond to the fields that are available for upload in HP ALM. Please note that the fields marked in 'RED' should be mapped as they are mandatory fields.
+The right pane grid items refer to the fields that are mapped so that values in Excel will flow into those corresponding fields of ALM.
+All About Requirements Specifications module in HP ALM
+
+Now let us understand how to map the fields in Excel against the fields in ALM.
+
+Select the Field that user would like to map and click on the arrow button as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Enter the column name in Excel that corresponds to the appropriate column name in HP ALM.
+
+All About Requirements Specifications module in HP ALM
+
+Map all the required columns in excel against the appropriate fields in HP ALM. After mapping all the required fields, click 'Export'.
+All About Requirements Specifications module in HP ALM
+
+Step 8) Upon successful upload, ALM displays the message as shown below. If errors appear please fix the issue and try re-uploading the same.
+
+All About Requirements Specifications module in HP ALM
+
+Step 11) Now let us verify the same under 'Requirements' Tab. All the requirement details including attachments are uploaded as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+How to do Coverage Analysis (Requirement Traceability)
+Once the user has mapped all the requirements, tests and defects as discussed in each one of those chapters, we will be able to generate coverage analysis and traceability Matrix.
+
+Coverage Analysis helps us to understand the Test coverage against a specific requirement and details about number of tests passed/failed/not executed.
+
+Step 1) Navigate to requirements module and Click on 'View' Menu and select 'Coverage Analysis'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 2) The coverage Analysis will be generated against each one of the requirements placed under 'Requirement Tab' with consolidated status on a folder level.
+
+All About Requirements Specifications module in HP ALM
+
+Step 3) Upon expanding the folder, the coverage analysis will be displayed as shown below.
+
+All About Requirements Specifications module in HP ALM
+
+Step 4) Click on each one of those coverage analysis status to get a drill down report.
+
+Click on the Status of a specific Requirement. The coverage Analysis will be displayed with the number of failures.
+Click 'Show Test Coverage' which will show the detailed test status attached to the selected requirement.
+All About Requirements Specifications module in HP ALM
+
+Step 5) Uponclicking 'Show Test Coverage', the test execution status against the selected requirement will be displayed.
+
+All About Requirements Specifications module in HP ALM
+
+Traceability Matrix :
+
+The Traceability Matrix enables the users to determine the extent of relationships between requirements and other requirements (or) between requirements and tests.
+The Traceability Matrix lists source requirements and their associated requirements and tests. The Matrix displays the total number of relationships for each source requirement.
+Step 1) First Step is to navigate to 'View' Menu and select 'Traceability Matrix'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 2) The Traceability Matrix page opens as shown below.
+
+Click 'Configure Traceability Matrix'
+The 'Configure Traceability Matrix' Dialog Opens.
+All About Requirements Specifications module in HP ALM
+
+Step 3) The criteria for generating the Traceability Matrix is shown below.
+
+Click 'Filter' under 'Define Source Requirements'
+The 'Filter Requirements' Dialog opens. Click the filter criteria button.
+Select Filter Criteria Dialog Opens. Select 'Functional' from the list
+Click 'OK'.
+All About Requirements Specifications module in HP ALM
+
+Step 4) The Filter requirement dialog displays the filter criteria as selected by the user. Click 'OK'.
+
+All About Requirements Specifications module in HP ALM
+
+Step 5) The Configure Traceability Dialog is displayed
+
+With the selected 'Requirement Type'
+Click on 'Filter by linked Tests' link.
+All About Requirements Specifications module in HP ALM
+
+Step 6) Let us generate the traceability matrix between requirements and tests. Hence upon clicking on 'Filter by linked tests', the following dialog is displayed to the user.
+
+Enable 'Filter by linked tests'.
+Select 'Linked to' the following tests.
+Let us generate the traceability matrix for those requirements that has got more than 5 tests. Hence select the Filter criteria as 'more than'
+Enter a value. In this case it is '5'
+Click 'Ok'
+All About Requirements Specifications module in HP ALM
+
+Step 7) Following screen is displayed to the user with all the requirements and its corresponding tests if the specified traceability matrix criteria is met.
+
+All About Requirements Specifications module in HP ALM
+
+Step 8) User can also click on 'Generate Traceability matrix' that can be exported to excel.
+
+Select the details for which the traceability matrix has to be generated.
+Click 'Generate Traceability Matrix'.
+All About Requirements Specifications module in HP ALM
+
+Step 9) The File save dialog is displayed to the user.
+
+Choose the location where the traceability matrix need to be saved.
+Enter the File Name
+Click 'Save'.
+All About Requirements Specifications module in HP ALM
+
+Step 10) Upon clicking 'Save' Button, the traceability matrix is generated to the user.
+
+All About Requirements Specifications module in HP ALM
+
+Here is a Video on Requirements module
+
+
+
+Click here if the video is not accessible
+
+key takeaways:-
+
+The requirements module in QualityCenter is used to store your Test Requirements.On the basis these stored requirements you will build your test cases.
+A parent requirement could have a child requirement.
+Each requirement is assigned a unique id for identification.
