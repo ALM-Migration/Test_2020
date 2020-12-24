@@ -1,0 +1,166 @@
+How to Download & Install HP ALM (Quality Center)
+Before Installing ALM 12.55, one has to understand the system requirements. We will go through how to perform a standalone installation on a Windows Environment. Users should meet all the below prerequisites for installing ALM Successfully.
+
+Operating Systems	Databases	Browsers	MSOffice
+Users should be installing ALM on one of the following Windows Server edition Operating Systems.
+Microsoft Windows Server 2008 R2 Enterprise SP1 64 Bit
+Microsoft Windows Server 2012 Standard 64 Bit.
+One of the following Databases should have been installed before proceeding to installing ALM.
+Oracle 10.2.0.5
+Oracle 11.2.0.3
+Microsoft SQL Server 2008 R2 SP2
+Microsoft SQL Server 2012 SP1
+User should use one of the following browsers to access ALM, after installation.
+Microsoft Internet Explorer 8 32 Bit
+Microsoft Internet Explorer 9 32 Bit
+Microsoft Internet Explorer 10 32 Bit
+To allow importing data from Excel/Word to ALM, users should have preinstalled one of the following MS Office Suites.
+Microsoft Office 2010 SP2 32 Bit
+Microsoft Office 2013 32 Bit
+Here is workflow of the installation process
+
+
+
+Part 1) Download
+Step 1) Go to https://software.microfocus.com/signup.
+
+Enter Data and Click Sign Up
+
+
+
+Step 2) In the next screen, you will see a message registration was successful.
+
+
+
+Step 3) Check your Inbox and confirm your email.
+
+
+
+Step 4) Go to Login Page - https://login.software.microfocus.com/msg/actions/showLogin
+
+Enter your email
+Click continue
+
+
+Step 5) In the next screen,
+
+Enter your Password
+Click "Sign In" button.
+
+
+Step 6) You will be taken to your Dashboard.
+
+Click on EXPLORE menu.
+Click on a ALM.
+
+
+Step 7) Click on Get Started Now.
+
+
+
+Step 8) Click on Download Now Button.
+
+
+
+Step 9) Click on a ALM_12.55_windows_english.zip
+
+
+
+Step 10) ALM download starts
+
+
+
+Part 2) Install ALM
+Step 1) Extract Downloaded file.
+
+
+
+Step 2) Go the extracted folded and Click on ALM_installer.exe
+
+
+
+Step 3) Installations process starts
+
+
+
+Step 4) Click on next button
+
+
+
+Step 5) In the next screen,
+
+Select the checkbox
+Click on Next button
+
+
+Step 6) Click on next button
+
+
+
+Part C) Configuration
+So far, we have just installed/copied across the necessary installation files for ALM. Upon successful installation, the installer will continue with server configuration wizard
+
+Step 1) Use 'Evaluation Key' and select 'Application Lifecycle Management' and click 'NEXT'.
+
+
+
+Step 2) Enter the Server Details. You should have preinstalled oracle/MS SQL Server. Select the appropriate database credentials and click 'Next'.
+
+
+
+Tip: Use MS-SQL(SQL Auth) because, ALM easily get installed with this option while MS - SQL(Win Auth) is more error prone due to OS registries and UAC settings
+
+TroubleShooting
+
+If you get Error "failed to validate database parameters" inspite of entering Valid Database parameters, then do following
+
+1. In command prompt check Port 1433 is listening. Use command netstat -an
+
+2. In SQL Server Configuration Manager > SQL Server Network Configuration > Protocols for MSSQLSERVER > Enable TCP/IP Protocol. Restart the SQLServer.
+
+3. Double click TCP/IP in the "Protocols for "Your Instance"" and go to IP addresses tab. Find IPAll drop down and set the port to 1433. Click Apply, than ok and restart the server, this should also be able to resolve this issue.
+
+Step 3) Enter the Site Admin Database Schema Name and password. After entering the details, Click 'Next'.
+
+
+
+Step 4) The Security page in the server configuration wizard opens. You can check 'Use Default Value' and click 'Next'.
+
+
+
+Step 5) Enter 'Site Administrator' User ID and Password. DONOT forget these credentials as these details would be required to login to ALM successfully.
+
+
+
+Step 6) Select the File Repository Path where all the ALM Data would be stored.
+
+
+
+Step 7) User can also select the Port that they would like to install. In this case it is 8181(default is 8080 which you can override) and click 'NEXT'.
+
+Note: The Default Port 8080 might be used by other applications, hence it is better to choose other port numbers.
+
+
+
+Step 8) Leave the HP ALM Service as empty as your Windows login credentials would be used by default. Click 'Next' to continue.
+
+
+
+Step 9) Enter the server details to setup mail server for HP ALM. This is used to send emails using ALM. If you do not want to specify, click none and move ahead
+
+
+
+Step 10) A configuration summary is shown before proceeding. Click Next
+
+
+
+Step 11) Configuration proceeds
+
+
+
+Step 12) Upon applying the configuration if successful, status message would be shown appropriately. Click 'Finish' and ALM service will be started if 'Start ALM Server' has been checked.
+
+
+
+Step 13) Now we can launch Quality Center by using the URL : http://localhost:8181/qcbin/. The ALM 12.0 would be launched as shown below.
+
