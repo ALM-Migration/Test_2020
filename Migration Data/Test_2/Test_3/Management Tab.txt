@@ -1,0 +1,173 @@
+Management Tab: Create Releases & Cycles in HP ALM (Quality Center)
+Management Tab helps users to organize and track releases and cycles.
+A release has a definite start date and end date that corresponds to a group of changes that will be deployed to the end users in that time interval
+A cycle which falls within a release has a set of development and Testing efforts in order to achieve a common goal.
+ALM users can track the progress of the project in real time by analyzing the releases tree to ensure if it matches the release goals.
+It also enables users to get a quick snapshot of the quality of that release which displays the outstanding Defect and defect opening rate.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Why do we need Management of Release and Cycles in ALM?
+In reality, when a product development happens, there are various release for a particular product
+
+Each release is broken down into a number of cycles. Let's say we have got 2 releases with each having 2 cycles of development and testing for Guru99 banking application.
+Each Release has also a predefined scope and milestone associated with it.
+For each cycle there is a specific number of requirements.
+Each requirement has a number of test cases associated with it.
+Upon executing tests, the defects are logged and mapped to the corresponding tests after which we can trace requirements and defects.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+The Management Tab
+This module helps us to create and manage releases and cycles which is the first step before proceeding to create any work item such as requirements/tests/defects. It also helps us work with project planning and tracking. Following functionalities are vital in this tab.
+
+Creating Releases
+Creating Cycles
+Creating Release Scope
+Create Milestone
+Note: before starting with exercise, refer this interactive tutorial to learn how to login in ALM
+
+How to Create a Release
+Creating releases is the first step in ALM and all other work item such as requirements, test cases and defects are traced based on the releases/cycles.
+
+As explained in workflow, we will have two releases this year for Guru99 banking application with the following timelines.
+
+Release Name
+
+Start Date
+
+End Date
+
+2017 R1
+
+01/01/2017
+
+21/06/2017
+
+2017 R2
+
+01/07/2017
+
+31/12/2017
+
+Step 1) First step is to navigate to Management tab and click on "Releases" Tab. The landing page would appear as shown below:
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 2) Before creating a release, we can create a container/folder by clicking on a "New Folder" icon in releases module as shown below. Give the folder name 2017
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 3) Next step is to create new releases. To create a new release, click "new release" button and the New Release dialog opens. Enter the following mandatory details
+
+Release Name
+Start Date of the Release
+End Date of the Release
+Brief Description about the release (Optional)
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 4) After Entering the above details click "OK". The Release will be created as shown below.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Likewise you can create other Release R2
+
+Step 5) Upon Selecting a particular Release, one can see the tabs that are relevant to the Releases.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 6) Now let us understand the important tabs available under "Releases" Module. Select Details Tab to retrieve the information about the details of the release that was provided during the creation of the Release.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 7) Select Release Scope Tab that provides the details about the scope of that release. We haven't created scope for this release; hence the scope list is empty. Creation of milestones and scope will be dealt in detail in a separate module.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 8) Master Plan provides the pictorial representation of the timeline. If cycles are created, the master plan would include cycle timelines for that release as well.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 9) Status Tab shows details about the release regarding the overall progress of that release.
+
+When the release is created afresh without any work item such as requirements/tests/defects added to it, the status would be displayed as shown below.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+The status would be displayed as shown below when user maps the work items such as requirements/tests/defects against the release.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+How to create Cycle
+In reality, each one of the releases is further broken down into cycles and let us understand how to create cycles in ALM. Let us say in our case there are two cycles in a release.
+
+Release	Cycle Name	Cycle Start Date	Cycle End Date
+Release R1	Cycle 1	01/01/2017	31/03/2017
+Cycle 2	01/04/2017	30/06/2017
+Release R2	Cycle 1	01/07/2017	30/09/2017
+Cycle 2	01/10/2017	31/12/2017
+Step 1)Select the Release under which you would like to create cycles and click on "New Cycles" button and the new cycles dialog box opens where the release timelines are prepopulated as this cycle is created under the selected release. User has to enter the following mandatory details in 'New Cycles' Window:
+
+Name of the Cycle
+Start Date of the Cycle
+End Date of the Cycle.
+Description (Optional)
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 2)Once all the cycle is created, user can access the same under created Release as shown below.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 3) Select a particular cycle to access details of that cycle.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 4) Now let us understand all the other important tabs present under "Cycles". User can attach any attachment under 'attachments' Tab. 'The Progress tab' gives the status of that cycle under the selected Release.
+
+The Progress will be displayed as shown below when user created the cycle without any workitems(requirements/tests/defects) mapped against it.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+The Progress will be displayed as shown below after user has mapped workitems(requirements/tests/defects) to the cycle.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 5 ) The Quality Tab provides the information such as Defect opening rate and number of outstanding defects which is the preliminary information about the quality of the current cycle.
+
+When the user has created the Cycle the 'Quality' Tab will be displayed as shown below as there are no workitems are mapped against it.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+The 'Quality' Tab will be displayed as shown below once the user has mapped work items against that release.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+How to Create Release Scope
+Each Release has a scope and milestone associated with it that can be added under "Release Scope" Tab under Releases.
+
+Step 1)Upon clicking on "+" icon in releases scope tab of releases module, New Scope dialog opens.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Enter the following details.
+
+The name of the scope which is the only mandatory field
+Priority of the Scope Item
+Owner of the Scope.
+Description about the Scope.
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 2) Upon clicking on "OK" button, all the added scope is shown in the "Release Scope" tab as shown below.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+How to Create MileStone
+Step 1) New Milestone can be created only under a release using a "New Milestone" Icon as shown below.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 2) While creating a milestone following fields are mandatory.
+
+Name of the Milestone
+Start Tracking Date
+End Tracking Date.
+Description
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 3) The created Milestone is shown as below.
+
+Release Specifications: Understanding the Management Tab in HP ALM
+
+Step 4) Now user can map a milestone scope against the created project scope. To perform the same, select the milestone and navigate to Milestone Scope and select the corresponding scope and map it.
