@@ -1,4 +1,4 @@
-Requirements Module in HP ALM (Quality Center) Tutorial
+******Requirements Module in HP ALM (Quality Center) Tutorial******
 Defining the Requirements is one of the preliminary phases for software development lifecycle.
 Defining Requirements refers to what has to be delivered to the clients at the end of that specific release.
 Establishing requirements with brevity and clarity upfront would result in minimal rework after development is completed.
@@ -14,7 +14,7 @@ How to Upload Requirement using Microsoft Excel
 How to perform Coverage Analysis (Requirement Traceability)
 All About Requirements Specifications module in HP ALM
 
-How to create Requirements
+******How to create Requirements******
 Step 1) Click on 'Requirements' in 'Requirements' module.
 
 All About Requirements Specifications module in HP ALM
