@@ -1,0 +1,209 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Test Lab in HP ALM (Quality Center)\par
+Once the test design is completed, test execution will take place with the help of Test Lab module.\par
+One common term you will come across in HP ALM in the Test Set module of Test Lab. If your mind triggers images of some sort of collection or a set, you are correct. Test Set is infact a collection of test cases that we intend to execute.\par
+Test cases from the Test Plan module are called into the Test Lab module.\par
+Changes done to test cases in the Test Lab module do not affect the parent test cases in Test Plan Module. You are free to experiment. Hence the name Test Lab!\par
+It is better to give the test set name same as that of the module name so that all the tests within the module are contained in same test set which would be easy to execute and track.\par
+Each test set folder is assigned to a particular cycle. This enables users to group the tests together that will be executed in a particular cycle.\par
+This module also helps user to track the progress of the cycle as the tests are executed.\par
+The Test Lab module consists of the following functionalities and let us understands each one of those in detail.\par
+Working with Test Lab in HP ALM\par
+\par
+In this tutorial we will learn -\par
+\par
+How to Create a Test Set\par
+How to Execute Tests\par
+How to create Test Run Schedule\par
+How to Analyze Test Result\par
+How to Create a Test Set\par
+Step 1) First step is to create a root folder as a container for having the test sets. We can name it in line with the release and cycle so that it is easy to track.\par
+\par
+Goto 'Test Lab' Module under 'Testing' Tab\par
+Create a new Folder by Clicking on 'New Folder' icon.\par
+The 'New Test Set Folder' Dialog opens. Enter the name of the folder as '2017 R1 \f1\endash  Cycle 1'.\par
+Click 'Ok'\par
+Working with Test Lab in HP ALM\par
+\par
+Step 2) The Test Run Folder would be created as shown below.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 3) Select the created folder and assign 'Cycle' to it which means the entire test set should be executed for Cycle 1.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 4) Enter the name of test set and click 'OK'\par
+\par
+Note: The Target Cycle field is disabled as the target cycle is selected at the folder level(2017 R1 \endash  Cycle 1).\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 5) After creating the test set, we need to select the tests and add it to the test set. \par
+\par
+Select the Test Set.\par
+Navigate to 'Execution Grid'.\par
+Click 'Select Tests' Button. The Test Plan Tree opens up.\par
+Select the Tests to be executed for this Cycle.\par
+Click '<=' button. This will move/pull test cases from test plan to test lab.\par
+Working with Test Lab in HP ALM\par
+\par
+Step 6) Upon adding tests from test plan tree, all the configuration parameters of the selected tests are displayed to the user. User can edit the configuration before adding it to the test lab.\par
+\par
+Note: User has no control over test configuration selection in test Lab. Hence the entire configuration will be added to the test set by default. In case one of the selected configuration is NOT part of the cycle, after adding the tests, delete from the test lab.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 7) After selecting the configurations, the selected tests are added to the test set. In this case we have selected all three configurations; hence we can find three instances of '01- Login Test'.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 8) Repeat the above steps to create more test sets and select all the relevant tests planned for this cycle. After creating all test set, the structure of test set will be as shown below:\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 9) The other important tab that we need to understand is 'Execution Flow'. Select 'Execution Flow Tab' which displays the order in which the tests would display during the execution. Users can also change the execution order using this tab which will be dealt in a separate section of this module.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+How to Execute Tests\par
+Step 1) Created test sets are now ready for execution. Tests can be executed using two options.\par
+\par
+Run Test Set \endash  This option allows user to execute all the tests in a selected test set.\par
+Run \endash  This option helps user to execute just the selected test.\par
+Working with Test Lab in HP ALM\par
+\par
+Step 2) Let us execute the entire test suite of the Login module by selecting 'Run Test Set' option. Upon clicking 'Run Test set' it displays the user with two options.\par
+\par
+Manual Runner (default) \endash  The order of the tests displayed during the execution would be as that of the order that is displayed in the test set grid.\par
+Automatic Runner \endash  The order of the tests displayed during execution would be shown as that of the order set in the execution flow tab.\par
+Let us proceed with the default option.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 3) The Manual Test runner is displayed to the User. In this Dialog let us understand the important features.\par
+\par
+Begin Run \endash  Helps to kick start the execution\par
+End Run \endash  Terminates the current Execution and closes the manual runner.\par
+Cancel Run \endash  Cancels the execution of the current tests.\par
+Attachments \endash  Helps us to attach screenshot/any other information related to the this test execution\par
+New Defect \endash  Upon clicking on it new defects dialog opens using which a Defect can be posted.\par
+OS Info \endash  Gives information about the operating system in which the tests are executed.\par
+Run Name \endash  Unique Time stamp using which the test results can be analyzed at later point in time.\par
+Click 'Begin Run'.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 4) Manual test runner with test controls and steps are displayed to the user. Let us understand the functionalities available in this test runner dialog.\par
+\par
+Working with Test Lab in HP ALM\tab Add a Step during the test execution time.\par
+Working with Test Lab in HP ALM\tab Delete a Step during the test execution time.\par
+Working with Test Lab in HP ALM\tab Pass Selected\par
+Working with Test Lab in HP ALM\tab Fail Selected\par
+Working with Test Lab in HP ALM\tab Shows the Parameter for the selected Test Step\par
+Working with Test Lab in HP ALM\tab Allows user to capture screenshot and add attachments during run time.\par
+Working with Test Lab in HP ALM\tab Allows user to add defect during run time.\par
+Working with Test Lab in HP ALM\tab Shows the user with a Compact View of the test runner\par
+Working with Test Lab in HP ALM\tab End execution\par
+Step Numbers created during test design stage\par
+Description of the selected step.\par
+Expected Result of the selected step.\par
+Working with Test Lab in HP ALM\par
+\par
+Step 5) Thenext test in the test set will be displayed to the user. Repeat Step 3 and Step 4 to execute the test and mark the status accordingly.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+How to create Test Run Schedule\par
+Testers can control the test execution with the help of "Execution Flow" Tab. Testers can also specify date and time for executing a particular test instance. We can also schedule the test based on the results of another specified test instance in the Execution Flow.\par
+\par
+Now, let us understand how to schedule the test flow in HP-ALM.\par
+\par
+Step 1) Select "Execution Flow" tab from Test Lab module.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 2) Double click on the specific test against which the schedule needs to be set. "Test Run Schedule" would be displayed as shown below. We can notice that there are no execution conditions that were set by default.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 3) To Add an execution condition, click on "+" icon as shown below.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 4) The New execution condition dialog opens up.\par
+\par
+Select the test from test drop down. All the tests in the test set will be displayed\par
+Select the condition. It can take either 'Passed' or 'Finished'.\par
+Click 'OK'.\par
+Working with Test Lab in HP ALM\par
+\par
+Step 5) The test run schedule is displayed with the added execution conditions.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 6) The Execution flow realigns automatically as show below. According to the below displayed flow, the test 'Cluster Head' will be executed only when the '02 \endash  Reset Button Check' is finished.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 7) Nowlet us understand how testers can specify the date and time in execution flow for executing a particular test. It is more helpful when testers know about the readiness of a specific functionality or for scheduling automated tests.\par
+\par
+Let us say, the manager login profile would be ready only after a specific date. Hence testers can execute the same by specifying the conditions in 'Execution Flow'.\par
+\par
+Double Click on the test for which the execution flow criteria needs to be set.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 8) Now,\par
+\par
+Navigate to 'Time Dependancy' Module\par
+Select 'Run at Specified Time'\par
+Enter the Date on which you would like to execute\par
+Enter the Time when you would like to execute the test\par
+Click 'Ok'.\par
+Working with Test Lab in HP ALM\par
+\par
+Step 9) Theexecution flow tab will be realigned as shown below. This kind of scheduling is very much helpful for automated tests which follow the same steps.\par
+\par
+Note: Ifthe scheduled date and time has arrived, then ALM would automatically launch the tests. It holds good for automated test as test would be executed without any manual intervention. The Precondition for triggering the tests automatically is that the host should be ready(shouldn't be powered off or locked) and it should be in a state to trigger the test. If it is a manual test then there won't be any effect.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+How to Analyze Test Result\par
+Step 1) Once the test execution is done, testers can view the results in the "Test Runs" module. It contains the results of test instance runs and test set runs.\par
+\par
+Goto "Test Runs" in "Testing" Tab and the window opens as shown below:\par
+The Run Name is a unique value generated for each one of those test executions.\par
+'Status' shows the final status of the test execution.\par
+The detailed Result can be viewed by clicking on the 'Run ID'.\par
+\par
+Working with Test Lab in HP ALM\par
+\par
+Step 2) The Run details dialog opens up and user will be able to view the detailed result.\par
+\par
+Goto 'Report' tab of the 'Run Details' window.\par
+Testers can check the status of each one of those test steps.\par
+Click 'Ok' to close the dialog.\par
+Working with Test Lab in HP ALM\par
+\par
+Video on Test Lab\par
+\par
+\par
+\par
+Click here if the video is not accessible\par
+\par
+ \par
+\par
+points to remember:\par
+\par
+You will use the Test Lab module in QualityCenter to execute your test cases\par
+Before you begin execution , you need to create a "Test Set Tree"\par
+To create a Test Set Tree , you need to first create  a "Test Set Folder"\par
+Next, you will  add "Tests" created in the Test Plan Module, to your Test Set Folder.\par
+A Test Set Folder together with added Tests is called the Test Set Tree (since it looks like a tree structure.)\par
+Test sets can include both manual and automated Test .\par
+You can include the same Test  in different Test Sets or add multiple instances of a Test to the same Test Set.\par
+Quality Center also provides for scheduling where in you can specify the date and time of execution of your Test Sets.\f0\par
+}
+ 
