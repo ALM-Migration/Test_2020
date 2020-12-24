@@ -1,0 +1,82 @@
+What is HP ALM?
+HP ALM (Application Life Cycle Management) is a web based tool that helps organizations to manage the application lifecycle right from project planning, requirements gathering, until Testing & deployment, which otherwise is a time-consuming task.
+
+In its earlier avatar as Quality Center, the test management tool was developed by Mercury interactive.
+
+It is now developed by HP as Application Life Cycle Management Tool (or) ALM that supports various phases of the software development life cycle.
+
+ALM also provides integration to all other HP products such as UFT and Load Runner.
+
+
+
+Why use HP ALM?
+The various stakeholders involved in a typical project are –
+
+Developer
+Tester
+Business Analysts
+Project Managers
+Product Owners
+These stakeholders perform diverse set of activities that need to be communicated to all concerned team members.
+
+If we do not maintain centralized repository to record, maintain and track all the artifacts related to the product, the project will unquestionably FAIL.
+
+We also need a mechanism to document and collaborate on all testing and development activities.
+
+Introduction to HP ALM(Quality Center)
+
+Enter HP ALM!
+
+It enables all the stakeholders to interact and coordinate, to achieve the project goals.
+It provides robust tracking & reporting and seamless integration of various project related tasks.
+It enables detailed project analysis and effective management.
+ALM can connect to our email systems and send emails about any changes(like Requirement change, Defect raising, etc..) to all desired team members.
+HP Quality Center Versions
+It is important to understand the history of ALM.
+
+Quality Center was earlier known as Test Director which was developed by Mercury Interactive.
+In 2008, Version 8 was released, and the product was renamed as Quality Center.
+Later, HP acquired Mercury Interactive and rebranded all mercury products as HP.
+So Mercury Quality Center became HP Quality Center
+In 2011, Version 11 was released, and Quality center was rechristened as HP ALM.
+Introduction to HP ALM(Quality Center)
+
+ 
+Architecture of QC
+Now let us understand the technology part of HP-ALM. ALM is an enterprise application developed using Java 2 Enterprise Edition (J2EE) that can have MS SQL Server or Oracle as its back end. ALM has 3 components – Client, Application Server and Database Server.
+
+HP ALM client: when an end user/tester accesses the URL of ALM, the client components are downloaded on the client's system. ALM client components help the user to interact with the server using .NET and COM technologies over a secured connection (HTTPS).
+ALM server/Application server: Application server usually runs on a Windows or Linux platform which caters to the client requests. App server makes use of the Java Database Connectivity (JDBC) driver to communicate between the application server and database servers.
+Database servers: The Database layer stores three schemas.
+Site Administration schema: It Stores information related to the domains, users, and site parameters.
+Lab Project: This schema stores lab information related to functional and Performance Testing on remote hosts, Performance Center server data.
+Project schema: Stores project information, such as work item/data created by the user under the project area. Each project has its own schema and they are are created on the same database server as the Site Administration schema.
+Introduction to HP ALM(Quality Center)
+
+HP ALM Editions:
+HP ALM is a commercially licensed tool and HP distributes ALM in 4 different flavors
+
+Introduction to HP ALM(Quality Center)
+
+ALM Edition Feature Comparison
+Each one of the license allows users to access certain ALM functionalities. Following Table lists the features that a particular license give you =
+
+Introduction to HP ALM(Quality Center)
+
+Let's study why would you purchase a particular version and whom is it suited for
+
+HP ALM Essentials – This is for corporates that need just the basic features for supporting their entire software life cycle. It has access to requirements management, test management and Defect management.
+HP QC Enterprise Edition – This license holds good for corporates who would like to use ALM exclusively for testing purposes. It also provides integration with Unified Functional Tester (UFT).
+HP ALM Performance Center Edition – This license best suits for organizations who would like to use HP ALM to drive HP-Load runner scripts. It helps the users to maintain, manage, schedule, execute and monitor performance tests.
+ALM Workflow
+To learn the ALM workflow, Let's first study a typical test process-
+
+Introduction to HP ALM(Quality Center)
+
+We begin with Planning, Drafting, and Release details. Determine no of Cycles in each release & Scope of each release
+For a given Release and Cycle, we draft the Requirements Specifications.
+Based on the requirements, Test plans and test cases are created.
+Next stage is executing the created tests plan
+Next stage in this test processes is tracking and fixing the defects detected in the execution stage
+During all stages, analysis is done, and reports and graphs are generated for test metric generation.
+HP ALM provides a module catering to each stage of the Testing Process. We will study them in detail in later tutorials.
