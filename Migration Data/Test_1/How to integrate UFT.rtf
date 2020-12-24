@@ -1,0 +1,325 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 How to integrate UFT(QTP) with ALM (Quality Center)\par
+ALM allows integration with other HP products such as HP UFT and Hp Load Runner.\par
+HP UFT is a functional automation tool that supports automation of both windows based and web based application. It also supports multiple technologies such as .NET, Java, Siebel, SAP etc.\par
+In this section we will understand how to drive UFT scripts from ALM. It consists of various configurations and steps.\par
+Prerequisite for this module is that both ALM and UFT must have been installed.\par
+Following is the roadmap one needs to follow in oder to run UFT tests using ALM\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part A - Add-in Installation:\par
+Step 1) Navigate to the ALM landing page ({{\field{\*\fldinst{HYPERLINK http://localhost:8181/qcbin/ }}{\fldrslt{http://localhost:8181/qcbin/\ul0\cf0}}}}\f0\fs22 ) and select 'Tools' as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) The Add-in page and 'HP ALM connectivity' link should be clicked.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) Click 'Download HP ALM Connectivity' link and the exe file would be downloaded in the specified location.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) Right click the downloaded file and 'Run as Administrator'.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) There won't be any installation wizard that the user has to go through if UFT is preinstalled. User only receives the installation status as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part B \f1\endash  Connecting UFT and ALM\par
+Step 1) Open UFT and you will notice the presence of ALM as one of the menus as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) Navigate the ALM menu and select ALM connection.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) ALM connection dialog opens.\par
+\par
+Enter the ALM server URL\par
+Enter the UserName\par
+Enter the Password and click 'Connect'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) Upon successful authentication, the ALM files would be downloaded as we are establishing connection between ALM and UFT for the very first time.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The ALM connection dialog waits for the user to select the domain and project.\par
+\par
+Select Domain\par
+Select the project\par
+Click 'Login'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 6) The ALM connection dialog displays the status.\par
+\par
+Connected to the Server and lists the details about the server address and user name.\par
+Connected to the project and lists the details about the project.\par
+Click 'Close'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part C \endash  Saving Script into ALM\par
+Let us understand the various components that are required for Executing an UFT Script.\par
+Main Driver Script \endash  The Entry point for any UFT Script that has .mts extension.\par
+Library \endash  The relevant Script/Function Files that can either be of extension (.vbs) or (.qfl).\par
+Object Repository \endash  It is usually of Shared Object repository by nature and has .tsr extension.\par
+DataTable \endash  Used for parameterizing the tests. Usually an Excel file.\par
+Note: The Idea behind this chapter is to understand ALM and UFT integration and NOT to learn how to write UFT scripts.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 1) First step is to save the Main Driver Script into ALM from UFT. Navigate to 'File' Menu and choose 'New Test' as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) The New Test Dialog opens.\par
+\par
+Select the type of test.\par
+Enter the Name of Test.\par
+We need to choose the location as ALM (by default it would display the UFT installed location). Click on 'Browse' Button.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) The 'Select Location' Dialog opens up.\par
+\par
+Choose 'ALM Test Plan' Tab.\par
+Double Click 'Functional' folder to open its subfolders.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) The 'Select Location' Dialog opens up with the subfolders of 'Functional' Folder.\par
+\par
+Double Click 'Automation folder.\par
+Click 'Select'.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The 'New Test' Dialog is displayed back to the user\par
+\par
+With the selected test location pointing to ALM.\par
+Click 'Create'.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 6) Now let us verify if the test has created successfully by logging into ALM.\par
+\par
+Navigate to 'Test Plan' Module.\par
+\par
+You will notice that the test script 'Guru99_Bank_Auto' is created under 'Automation' folder.\par
+Under details tab, we can also find that the test type is locked down as 'QUICKTEST_TEST' which means it is an UFT script.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 7)Now start developing the Script in UFT and save the script which can be accessed in ALM by selecting 'Test Script' Tab of the created test.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+\par
+Step 8) Next step is to save the associated function library files under 'test resources' module of ALM which would be picked up automatically during execution.\par
+\par
+For this script, we have two function libraries associated with the created test script out of which one contains all functions related to the application and one which contains function which will help the users to generate the output text result file.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 9) We need to save the associated library files in ALM under 'test Resources'.\par
+\par
+Click 'New Resource' button\par
+The 'New Resource' Dialog opens up\par
+Enter the Name of the Function Library\par
+Select the type as 'Function Library'\par
+Click 'OK'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 10) The created test resource will be displayed to the user as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 11) Now we need to upload the .vbs onto the created test resource.\par
+\par
+Click 'Resource Viewer'\par
+Click 'Upload File'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 12) The upload file dialog opens up.\par
+\par
+Select the Path where the .vbs file is located\par
+Select the File that has to be uploaded.\par
+Click 'Open'.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 13) Upon uploading successfully, ALM displays the status to the user. Click 'OK'.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 14) The uploaded test resource can be viewed using 'Resource Viewer'.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 15) Repeat the steps 8 to 14 to upload one other function file associated with the test. After uploading the 'generateresult.vbs', the resource viewer would be displayed as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 16) Now we need to upload the relevant 'Object Repository' files under 'test resources' module, similar to how we have uploaded function libraries.\par
+\par
+Click 'New Resource' Module\par
+The 'New Resource' Module window opens up.\par
+Enter the Name of the test resource.\par
+Select the type of the file as 'Object Repository'.\par
+Click 'OK'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 17) The Test resource is created as shown below. Now user needs to upload the repository file.\par
+\par
+Click 'Resource Viewer' Tab.\par
+Click 'Upload File' Button.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 18) Now upload the shared object repository file.\par
+\par
+Select the File where it has been stored.\par
+Click 'Open' button.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 19) Upon uploading successfully, ALM displays the status to the user. Click 'OK'.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 20) The test resource can be viewed right from ALM as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 21) The last test resource that we need to upload is the 'Test Data' Sheet which contains the parameterized test.\par
+\par
+For Demo purposes, we have automated 4 tests cases. The designed Test data is shown as below. Now we need to upload the same in ALM.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 22) Create a new resource with name 'TestData' and select the type as 'test Resource' and select 'OK'\par
+\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 23) As explained from step 17 to 19,uploadthe test data Excel file and uponsuccessful upload the Created 'test data' would be displayed as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part D \endash  Settings in UFT\par
+Step 1) We have all the associated files loaded into ALM, we have to ensure that the automation script picks up the library file, OR and data file from ALM. Let us understand how to associate function libraries to the test script dynamically from ALM.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) The Object Repository also has to be picked up from 'Test Resources' Tab of ALM. Let us see how to load the Object repository dynamically during runtime.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) The Test Data has to be imported into the 'Global' Sheet of UFT. To perform the same we should ensure that we have the following piece of code before making an attempt to access the parameters mentioned in the data table.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) We Should ensure that we allow other HP products to interact with UFT. To perform the same, goto 'Tools' -> 'Options' as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The Options Dialog opens up.\par
+\par
+Select 'GUI Testing' Tab.\par
+Select 'Test Runs'\par
+Enable 'Allow other HP products to run tests and components'\par
+Click 'OK'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part E \endash  Executing Scripts in ALM\par
+Step 1) Create a test suite in 'Test Lab' Module for execution. Let us create a 'New Folder' for automated test suite.\par
+\par
+Select the 'Test Lab' Module\par
+Select the folder under which we like to create the new folder\par
+Click on New folder icon\par
+Enter the name of the folder\par
+Click OK.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) New Folder would be created as shown below:\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) Now we need to create a test set under the created folder.\par
+\par
+Select the folder\par
+Click 'New Test Set' button\par
+Enter the Name of the Test Set\par
+Click 'Ok'\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) Like manual tests, after creating the test set, the test instances need to be added from Test Plan tree.\par
+\par
+Select the created test set\par
+Click 'Select Tests' button. The Test Plan tree opens up.\par
+Select the test\par
+Click '<=' button\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The added test would be displayed as shown below.\par
+\par
+The added test displays the type of test as 'QUICKTEST_TEST' automatically.\par
+Click 'Run' Button to trigger the execution.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The automatic test runner dialog opens up. Let us understand all the available features within this window.\par
+\par
+Run all \endash  Allows us to execute the test set completely.\par
+Run \endash  Allows us to execute only the selected test instance.\par
+Run all tests Locally \endash  The test would be kicked off in the local host. If Unchecked user has the capabilities to enter to host name in which the tests has to be executed.\par
+Enable Log \endash  Creates an execution log file during the test run. To view the execution log after text execution, Select 'View Execution' from 'Run' menu of the same dialog.\par
+Click 'Run' to trigger the test.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 6) UFT will be launched in the background while the script is being executed. The run status will be displayed once the test execution is completed as shown below. Close the window.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Part F \endash  Analyzing the Results:\par
+Step 1) The execution grid is displayed back to the user upon closing the 'Automatic Runner' dialog.\par
+\par
+With test execution status updated.\par
+The inbuilt UFT test report can be accessed by clicking the 'Launch Report' button.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 2) The inbuilt UFT test report will be shown to the user.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 3) The detailed results can be accessed using 'Test Runs' module. Like manual tests, the detailed result displays all the information.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 4) The test also generates a text result file which can accessed from the attachments section. The text file is generated by the script(test framework) which is NOT the inbuilt report of UFT. To access the same perform the following:\par
+\par
+Select the 'Run ID'.\par
+The 'Run details' dialog opens up.\par
+Goto 'Attachments' Section.\par
+A result file will be available for the users to download. Double click on the text file.\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Step 5) The text result file is opened in notepad. The result file will be displayed as shown below.\par
+\par
+How to integrate UFT(QTP) with  ALM (Quality Center)\par
+\par
+Download the UFT automation script used in this tutorial\par
+\par
+Video on QTP integration with Quality Center\par
+\par
+\par
+\par
+ \par
+\par
+Click here if the video is not accessible\par
+\par
+Notes:-\par
+\par
+Quality Center provides many a features like copying test steps , emailing scripts for review , adding attachments etc.  to facilitate faster development of test cases.\par
+You can create a script in Automation tools like QTP and Loadrunner , and then upload and store them in Quality Center\par
+You can also directly convert a Manual Test Script in Quality Center into an Automated Script.\f0\par
+}
+ 
