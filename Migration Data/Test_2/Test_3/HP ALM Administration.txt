@@ -1,0 +1,122 @@
+HP ALM Administration: Create Domain, Project & User
+In order to work with ALM, you need to
+
+Create Domain
+Create Project
+Create Users
+In practice, these would be created by ALM Site Administrator as an end user WILL NOT have access to Site Admin page.
+
+ 
+
+ 
+
+How to Create a Domain
+Step 1) Launch ALM and click 'Site administration' from the home page. User will be popped up to enter the credentials. Enter the Credentials that we have created during Installation.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 2) The Admin Dashboard is shown. Click on Create Domain
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 3) In the pop-up Enter Domain Name (in our case "Banking") and Click OK
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 4) The domain would be created as shown below.
+
+Create a Domain, Project, User in HP ALM
+
+How to Create a Project
+Step 1) Select the Domain under which projects are to be created. In this case it is 'Banking' Domain, and click 'Create Project' as shown below
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 2) The 'Create Project' wizard opens. Select 'Create and Empty Project' from the list and click 'Next' button.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 3) Enter the Name of the Project and click 'Next' as shown below.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 4) Select the appropriate Database type and enter the following. In this case, we have selected 'MS-SQL' as we had installed Hp-ALM with MS-SQL as backend. If you had installed ALM with Oracle as your database server, please select 'oracle'.
+
+(1) Database server name
+
+(2) Database Admin User Name
+
+(3) Database Admin Password and click 'Next'.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 5) Select 'Admin' user and click 'Next'. No other users are displayed as we haven't created any users in ALM.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 6) The summary dialog is displayed and Click on 'create' button. You will also notice that there are two check boxes in this window.
+
+Activate Project – If unchecked, project would still be created but users will not be able to access this project area.
+
+Enable Versioning – This will enable version controlling feature which restricts the users from editing the same work item (requirements, tests) at the same time to avoid overwriting the changes made by one user over other.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 7) The project creation status would be displayed as shown below.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 8) The project 'GURU99_BANK' has been created successfully under 'BANKING' domain as shown below.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+How to Create a User
+Step 1) In order access HP ALM , a user profile needs to be created. In order to create users, site admin has to click on 'Site users' Tab.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 2) Click 'Add user' icon from 'Site users' tab as shown below.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 3) The 'Add user' dialog box opens. Enter all the necessary details and click 'OK'.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 3) The Added user will be displayed in 'user list' as highlighted below along with the other existing users.
+
+Create a Domain, Project, User in HP ALM
+
+ 
+
+Step 4) Now we will need to map the user to the project areas as the newly created user WILL NOT have access to any of the projects. It is enough to create a user only once to have access to multiple project areas.
+
+In this case we have added the user 'Guru99' to 'GURU99_BANK' Project area which is under 'BANKING' domain.
