@@ -1,6 +1,6 @@
 HP ALM /Quality Center Tutorial
 
-Training Summary
+*Training Summary*
 HP Application LifeCycle Management (ALM) is the latest incarnation of flagship test management tool Quality Center(QC). These tutorials are based on HP ALM version 12.
 What should I know?
 Nothing. These tutorials are designed for beginners with little or no HPQC experience.
