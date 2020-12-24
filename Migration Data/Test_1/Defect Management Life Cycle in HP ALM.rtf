@@ -1,0 +1,210 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Defect Management Life Cycle in HP ALM (Quality Center)\par
+A Defect is logged during the test execution, when expected result and actual result don't match with each other.\par
+Defect module in HP ALM not only helps users to post the defects but also enables them to track and gives the overall quality of the release at any stage of the development process.\par
+ \par
+\par
+ \par
+\par
+ \par
+\par
+ \par
+\par
+ \par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Default Defect Life Cycle in ALM:\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Status\tab Explanation\par
+New\tab When a defect is posted, the default status is 'New'\par
+Open\tab When the defect is accepted by developers it is moved to 'Open' Status\par
+Rejected\tab When the defect is rejected by developers it is moved to 'Rejected' Status\par
+Fixed\tab When the defect is fixed by developers it is moved to 'Fixed' Status. Testers would pick up all defects for Testing that are in status 'Fixed'.\par
+Reopen\tab If the testing has failed, the defect is moved to 'Reopen' status\par
+Closed\tab If the testing has passed, the defect is moved to 'Closed' Status.\par
+Note:\par
+\par
+Users can also configure the defect life cycle by adding new defect statuses. Adding new defect status would be dealt in project customization chapter.\par
+\par
+In this tutorial we will learn\par
+\par
+How to Create a New Defect\par
+\par
+How to Link Defect to a Requirement\par
+\par
+How to Upload Defect using Excel\par
+\par
+How to search a Defect\par
+\par
+Email Notification of Defects\par
+\par
+How to Create a New Defect\par
+Step 1) Navigate to defects Tab in Quality Center and Click on "New Defect" button.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 2) The "New Defect" Dialog Open up. Fill in the following mandatory information.\par
+\par
+Enter Detected By Field\par
+Enter the Detected on Date \f1\endash  By Default current date would be picked up\par
+Set the severity level of the defect.\par
+User can also enter other information and enter a brief description about the defect\par
+    Defect Management in HP ALM (Quality Center)\par
+\par
+Step 3) Tester can also attach screenshots/other relevant files associated with the defect using 'attachments' tab.\par
+\par
+Click 'Attachments' Tab\par
+Click 'Attachments' Button\par
+Select a File from the File explorer dialog.\par
+Click 'Open'\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 4) Upon clicking 'Open' we will be able to see that the file is attached under the attachment section.\par
+\par
+The Selected file has been uploaded\par
+Click 'Submit' to post a defect after which it generates a defect ID.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 5) The defect is posted, the same be accessed in Defects Tab as shown below. You can also notice that the defect ID is generated upon posting the defect.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+How to Link Defect to a Requirement\par
+Users can link a defect with other defects or link a defect with requirements. By Linking defects and requirement we can generate coverage analysis graph and traceability matrix.\par
+\par
+Step 1) After creating the defect, testers can map the linked requirements against it. To do the same,\par
+\par
+Click on 'Defect ID'\par
+The defect details dialog opens as shown below.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 2) To Link entities,\par
+\par
+Navigate to 'Linked Entities'\par
+Click 'Others' for linking requirements against this defect.\par
+Click 'Link' button and choose 'by Id'(we can also select based on a requirement name)\par
+Enter the Requirement ID against which this defect has to be mapped.\par
+Click 'Link' Button\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 3) After clicking link button the defect details window displayed back to the user with the added link as shown below.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 4) Once the requirement is linked against a defect, the requirement displays with the link symbol against it as shown below.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 5) Once the requirement is linked against a defect, the requirement Traceability Matrix can be generated. To generate the Traceability Matrix navigate to view menu of 'Requirements' and select 'Traceability matrix'. The generated Traceability Matrix would be generated as shown below.\par
+\par
+Note: Please refer the tutorial 'Requirements Module' for generating traceability matrix where the steps are elaborated in detail.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+How to Upload Defect using Excel\par
+Every time users won't be in position to create each one of those defects manually.\par
+This module helps users to upload the defects from Excel into ALM. This really helps when users want to migrate from one defect management system to ALM.\par
+The process remains the same as that of uploading Tests and requirements.\par
+One has to ensure that the Excel file is prepared in a format such that ALM allows importing of the data.\par
+Step 1) Create the Excel file with the required columns that user wishes to upload as shown below.\par
+\par
+The Field 'attachments' takes the local path where the screenshot/any other attachment is kept. Users have to just mention the path of the attachment so that it would be picked up for uploading into ALM along with the other details of the defect.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 2) Now,\par
+\par
+Navigate to 'Add-ins' Tab\par
+Select 'Export to HP ALM'\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 3) The ALM Export Wizard opens. Enter the HP ALM Server URL and Click 'Next'.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 4) Enter the user name and password for authentication and Click 'Next'.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 5) Select the Domain, Project Name into which we would like to upload the tests and Click 'Next'.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 6) Select the type of data that we would like to upload. In this case, it is Defects.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 7) Enter the New Map name. The first option, 'Select a map' is disabled because we haven't created a map so far for uploading defects. Hence we should create new map name and click 'Next'. We haven't selected 'Create a Temporary map' as we would like to reuse every time for uploading defects.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 8) Upon Clicking 'Next', the mapping dialog opens as shown below.\par
+\par
+The left pane grid items that are listed correspond to the fields that are available for upload in HP ALM. Please note that the fields marked in 'RED' should be mapped as they are mandatory fields.\par
+The right pane grid items refer to the fields that are mapped so that values in Excel will flow into those corresponding fields of ALM.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 9) Now let us understand how to map the fields in Excel against the fields in ALM.\par
+\par
+Select the Field that user would like to map and click on the arrow button as shown below.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Enter the column name in Excel that corresponds to the appropriate column name in HP ALM.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Map all the required columns in Excel against the appropriate fields in HP ALM. After mapping all the required fields, click 'Export'.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 10) Upon successful upload, ALM displays the message as shown below.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+How to search a Defect\par
+The Defect module contains all the defects that are logged right from the very first defect it has been logged.\par
+\par
+Hence user would be in a position to search defects based on certain criteria.\par
+\par
+Step 1) Navigate to 'Edit' Menu and choose 'Find'.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 2) TheFind dialog would be displayed.\par
+\par
+Enter the Field name based on which the search has to be performed ( In this case we use Defect ID to search)\par
+Enter the Value\par
+Click 'Find Next'\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Step 3) ALM displays the item in the background as shown below.\par
+\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Email Notification of Defects\par
+Assigned users will automatically receive an email if there is a change in status/assigned to fields, provided the email configurations are set appropriately by ALM admin\par
+The Email would be triggered based on setting under 'Alerts' tab of project customization module (refer to Project Customization for details).\par
+Let us say the assigned user 'Glenn' has to receive email when the defect status moved to 'Fixed' status. The email would be sent as shown in the below. The screenshot is taken after receiving an email (from MS Outlook).\par
+\par
+The mail is sent to 'Glenn'\par
+The mail has the details about the defect\par
+The mail is triggered because the status has moved from 'Reopen' to 'Fixed' as shown below.\par
+Defect Management in HP ALM (Quality Center)\par
+\par
+Video on Defect Management\par
+\par
+\par
+\par
+Click here if the video is not accessible\par
+\par
+Summary:-\par
+\par
+You can link a test in your Test Plan ,to a specific defect in the Defects Grid ,inQualityCenter\par
+Linkage is helpful when new test is created for a existing defect , or there is a change in requirements which is linked to a defect.\par
+Linkage can be done  directly or indirectly.\par
+When you directly Link a defect to a Run,QualityCenterindirectly links the defect to the Test instance, Test Set , Test and  Requirements\par
+However the linkage is unidirectional i.e. when you link a Defect to run , it is not indirectly linked to run step\f0\par
+}
+ 
